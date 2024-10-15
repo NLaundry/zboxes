@@ -1,0 +1,10 @@
+# config.toml
+
+[colors]
+title = "#fab387"
+normal_text = "#cdd6f4"
+cursor = "#89dceb"
+selected = "#cba6f7"
+border = "#585b70"
+instruction = "#a6adc8"
+active_column_bg = "#313244"
