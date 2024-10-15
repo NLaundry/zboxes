@@ -2,7 +2,7 @@
 package main
 
 import (
-	"io/ioutil"
+	"io"
 
 	"github.com/pelletier/go-toml"
 )
@@ -22,7 +22,7 @@ type Config struct {
 }
 
 func LoadConfig(path string) (*Config, error) {
-	data, err := ioutil.ReadFile(path)
+	data, err := io.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
